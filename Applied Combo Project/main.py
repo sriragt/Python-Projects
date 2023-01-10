@@ -1,7 +1,7 @@
 print('\n\n')
 """""""""""""""""""""""""""""""""""""""""""""""""""
 Math 3012 Project
-Student: Rishit Sarkar, Srirag Tatavarti, Anish Kayarthodi
+Student: Srirag Tatavarti
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
