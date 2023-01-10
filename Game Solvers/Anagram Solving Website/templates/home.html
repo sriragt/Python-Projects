@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+	<style type="text/css">
+		.br {
+			display: block;
+			margin-bottom: 15px;
+		}
+	</style>
+	<div id="formContainer">
+      <h1><a>Anagram Solver</a></h1>
+      <form class="appnitro" method="POST" action="/connect">
+        <ul>
+	        <label class="description">Input the letters you want to find anagrams for:</label>
+	          <input
+	            name="letters"
+	            class="medium"
+	            type="text"
+	            maxlength="8"
+	            value=""
+	            placeholder="Enter anagram"
+	          />
+	        <p class="guidelines" style="font-size:11px">
+	        	<i>Please input up to 8 letters without spaces or punctuation</i>
+	        	<span class="br"></span> 
+	        </p>
+
+			<p>
+			<label class="description">Filter Abbreviations?</label>
+			<input name="filter" type="radio" id="Yes" value="Yes"/>
+			<label for="Yes">Yes</label>
+			<input name="filter" type="radio" id="No" value="No" checked/>
+			<label for="No">No</label>
+			</p>
+			<p class="guidelines" style="font-size:11px"><i>Filtering abbreviations takes significantly longer</i>
+			</p>
+
+			<div>
+            <input type="hidden"/>
+            <input type="submit" name="submit" value="Submit"/>
+        	</div>
+
+        </ul>
+      </form>
+    </div>
+{% endblock content %}

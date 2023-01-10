@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style type="text/css">
+        .br {
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+	<br></br>
+	{% if title != None %}
+		<h1><center>Anagrams of {{ title.upper() }}</center></h1>
+	{% else %}
+		<h1><center>ANAGRAM SOLVER</center></h1>
+	{% endif %}
+
+	<div class="resubmit">
+        <form method="POST" action="/connect">
+        <label class="description">Find more anagrams:</label>
+        <input
+            id="element_1"
+            name="letters"
+            class="element text medium"
+            type="text"
+            maxlength="8"
+            value=""
+        />
+        <span class="br"></span> 
+
+        <p style="line-height:10px">
+        <label class="description">Filter Abbreviations?</label>
+        <input name="filter" type="radio" id="Yes" value="Yes"/>
+        <label for="Yes">Yes</label>
+        <input name="filter" type="radio" id="No" value="No" checked/>
+        <label for="No">No</label>
+        </p>
+        <p class="guidelines" style="font-size:11px"><i>Filtering abbreviations takes significantly longer</i>
+        </p>
+
+        <input
+            id="saveForm"
+            class="button_text"
+            type="submit"
+            name="submit"
+            value="Submit"
+        />
+        </form>
+    </div>
+    <br></br>
+
+	{% for num in wordlist %}
+        <h2>Number of Letters: {{ num }}</h2>
+        {% if wordlist[num] == '' %}
+            <p><font color=#fffdfd>.</font></p>
+        {% else %}
+    		<p>{{ wordlist[num] }}</p>
+        {% endif %}
+	{% endfor %}
+{% endblock content %}
