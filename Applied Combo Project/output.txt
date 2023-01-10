@@ -1,0 +1,103 @@
+k5.txt
+Vertices: 5
+Edges: 10
+
+Found a triangle (cycle of length 3): 1 2 3
+
+Does not satisfy e ≤ 3v - 6: 10 ≤ 3 * 5 - 6 = 9
+
+Graph is not planar
+
+
+
+k33.txt
+Vertices: 6
+Edges: 9
+
+Does not satisfy Euler's Formula (v - e + f = 2): 6 - 9 + 3 = 0
+
+Graph is not planar
+
+
+
+test-graph1.txt
+Vertices: 9
+Edges: 12
+
+Satisfies e ≤ 2v - 4: 12 ≤ 2 * 9 - 4 = 14
+
+Satisfies Euler's Formula (v - e + f = 2): 9 - 12 + 5 = 2
+
+Graph is planar
+
+
+
+test-graph2.txt
+Vertices: 7
+Edges: 13
+
+Does not satisfy Euler's Formula (v - e + f = 2): 7 - 13 + 7 = 1
+
+Graph is not planar
+
+
+
+test-graph3.txt
+Vertices: 8
+Edges: 14
+
+Does not satisfy Euler's Formula (v - e + f = 2): 8 - 14 + 5 = -1
+
+Graph is not planar
+
+
+
+test-graph4.txt
+Vertices: 8
+Edges: 19
+
+Does not satisfy Euler's Formula (v - e + f = 2): 8 - 19 + 8 = -3
+
+Graph is not planar
+
+
+
+test-graph5.txt
+Vertices: 40
+Edges: 210
+
+Does not satisfy Euler's Formula (v - e + f = 2): 40 - 210 + 8 = -162
+
+Graph is not planar
+
+
+
+test-graph6.txt
+Vertices: 200
+Edges: 5050
+
+Does not satisfy Euler's Formula (v - e + f = 2): 200 - 5050 + 8 = -4842
+
+Graph is not planar
+
+
+
+test-graph7.txt
+Vertices: 16383
+Edges: 32648
+
+Does not satisfy Euler's Formula (v - e + f = 2): 16383 - 32648 + 8 = -16257
+
+Graph is not planar
+
+
+
+test-graph8.txt
+Vertices: 32768
+Edges: 32767
+
+Satisfies e ≤ 2v - 4: 32767 ≤ 2 * 32768 - 4 = 65532
+
+Satisfies Euler's Formula (v - e + f = 2): 32768 - 32767 + 1 = 2
+
+Graph is planar
