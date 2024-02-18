@@ -1,4 +1,3 @@
-print('\n\n')
 """""""""""""""""""""""""""""""""""""""""""""""""""
 Math 3012 Project
 Student: Srirag Tatavarti
@@ -185,6 +184,7 @@ def logic(file):
 This is the main method that tests logic with different graphs.
 """""""""""""""""""""""""""""""""""""""""""""""""""
 def main():
+	print('\n\n')
 	logic("k5.txt")
 	logic("k33.txt")
 	logic("test-graph1.txt")
